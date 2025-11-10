@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+<title> Happy Birthday Princess </title>
+</head>
+<body>
+  <!-- 🌸 Cover Page Overlay -->
+  <div id="coverPage">
+    <div class="cover-content">
+      <h1>Something specially made for you</h1>
+      <p>I hope you like it 💖</p>
+      <button id="enterButton">Enter</button>
+    </div>
+    <div class="curtain left-curtain"></div>
+    <div class="curtain right-curtain"></div>
+  </div>
+
+  <!-- 🌸 Background Music -->
+  <audio id="bgMusic" src="Resources\titanic bgmusic.mp3" loop></audio>
+    <!-- 🌙 Theme Toggle (Top Right Corner) -->
+    <div class="TStheme-toggle">
+      <label>Swiftie Theme :</label>
+      <label class="TSswitch">
+        <input type="checkbox" id="TSthemeSlider" onchange="toggleThemeTS()">
+        <span class="TSslider round"></span>
+      </label>
+    </div>
+    <div class="MStheme-toggle">
+      <label>Ladybug Theme :</label>
+      <label class="MSswitch">
+        <input type="checkbox" id="MSthemeSlider" onchange="toggleThemeMS()">
+        <span class="MSslider round"></span>
+      </label>
+    </div>
+    <div class="CStheme-toggle">
+      <label>Cat Noir Theme :</label>
+      <label class="CSswitch">
+        <input type="checkbox" id="CSthemeSlider" onchange="toggleThemeCS()">
+        <span class="CSslider round"></span>
+      </label>
+    </div>
+    <header class="hero">
+        <h1 id="pageTitle">Happy Birthday My Dear Princess</h1>
+        <div class="sub" id="pageSubTitle">A Royal Celebration Among the Stars</div>
+    </header>
+    <div class="divider"></div>
+    <main class="container">
+
+        <!-- Two poem boxes -->
+        <section class="poems" aria-label="Birthday Poems">
+          <div class="gift-box">
+          <article class="poem" id="poem1">
+            
+            <h3 id="h3_1">Ever True</h3>
+            <p>My love for you, like a river, flows<br>
+            My heart it swells, as I’m exposed<br>
+            To your beauty, like a star, aglow<br>
+            Your presence, like a melody, I know</p>
+    
+            <p>Your words, like sweet honey, they roll<br>
+            My soul they touch, my love they console<br>
+            Your laughter, like the music of birds<br>
+            My soul it stirs and my heart it heard</p>
+    
+            <p>Your beauty, like a rainbow, divine<br>
+            My eyes they marvel, my heart they entwine<br>
+            Your kiss, like a flame, it burns<br>
+            A love, like no other, for me it yearns</p>
+    
+            <p>My love for you, ever true<br>
+            My heart, forever, belongs to you.</p>
+            <div class="box_top" id="box_top1">
+              <div class="ribbon-vertical" id="ribbon-v1"></div>
+              <div class="ribbon-horizontal" id="ribbon-h1"></div>
+            </div>
+          </article>
+          </div>
+          <div class="gift-box">
+          <article class="poem" id="poem2">
+            <div class="rose-edge" aria-hidden="true"></div>
+            <h3 id="h3_2">Royal Grace</h3>
+            <p>Your eyes, so bright and blue,<br>
+            A delicate beauty, to view<br>
+            Your smile like a gentle breeze<br>
+            Your laugh, a sweet symphony</p>
+    
+            <p>When I’m away, I’m still with you<br>
+            Your beauty, a song I strum<br>
+            For you, I have a special fondness<br>
+            Your spirit, a boon I succumb</p>
+    
+            <p>Your grace, a blessing of light<br>
+            Your face, a glorious sight<br>
+            Your heart, a vessel of love<br>
+            My feelings, from above</p>
+    
+            <p>Like a rose, you fill the air<br>
+            Your beauty, a thing I can’t compare<br>
+            Your love, a warmth I can’t resist<br>
+            This feeling, I can’t dismiss</p>
+    
+            <p>My heart, I give to you<br>
+            A love, I can’t construe<br>
+            My arms, I wrap around you<br>
+            Our love, I hope we renew</p>
+            <div class="box_top" id="box_top2">
+              <div class="ribbon-vertical" id="ribbon-v2"></div>
+              <div class="ribbon-horizontal" id="ribbon-h2"></div>
+            </div>
+          </article>
+          </div>
+        </section>
+        <div class="divider"></div>
+        <!-- Photo frame with hearts halo -->
+        <section class="gallery" aria-label="Photo">
+          <div id="photo-frame" class="photo-frame">
+            <!-- Each image has its own audio -->
+            <div class="photo-item">
+              <img id="img1" src="Resources\Eyes.jpg" alt="Birthday Girl">
+              <audio id="song1" src="Resources\I Wanna Be Yours - Arctic Monkeys.mp3" preload="auto" loop="true"></audio>
+            </div>
+            <div class="photo-item">
+              <img id="img2" src="Resources\Her 2.jpg" alt="Birthday Girl">
+              <audio id="song2" src="Resources\Perfect - Ed Sheeran.mp3" preload="auto" loop="true"></audio>
+            </div>
+            <div class="photo-item">
+              <img id="img3" src="Resources\Her 1.jpg" alt="Birthday Girl">
+              <audio id="song3" src="Resources\Divine (Acoustic Version) - Krishnahazar.mp3" preload="auto" loop="true"></audio>
+            </div>
+            <div class="photo-item">
+              <img id="img4" src="Resources\Her 4.jpg" alt="Birthday Girl">
+              <audio id="song4" src="Resources\Keenan Te - Rest of My Life (Official Lyric Video) - KeenanTeVEVO.mp3" preload="auto" loop="true"></audio>
+            </div>
+          </div>
+
+          <!-- Caption below gallery -->
+          <p class="gallery-caption">✨ Hover for a song dedication ✨</p>
+
+          <!-- 🌍 Song Language Toggle Slider -->
+          <div class="song-language-toggle">
+            <span class="lang-label">English Song</span>
+            <label class="lang-switch">
+              <input type="checkbox" id="languageSlider" onchange="toggleLanguage()">
+              <span class="lang-slider round"></span>
+            </label>
+            <span class="lang-label">Tamil Song</span>
+          </div>
+        </section>
+
+
+
+        <div class="divider"></div>
+        <!-- Encrypted Message to unlock letter -->
+        <!-- Message like "I LOVE YOU" or "HAPPY BIRTHDAY" encrypted in numbers 
+              user needs to decrypt the message to unlock the letter -->
+        <!-- 🔑 Puzzle & Secret Message Section -->
+        <div class="puzzle-container" id="puzzle-container">
+          <p><strong>Solve the puzzle to get the secret key 🔮</strong></p>
+  
+          <!-- 👉 Replace this with your own puzzle (question, riddle, etc.) -->
+          <div class="puzzle">
+          <p><em>
+            <!-- i love you aunty-->
+            | 1=Y | 2=I | 3=L | 4=V | 6=E | 8=O | 9=U |
+            </em>
+            <br><br><strong>2 3846 189 </strong>
+          </p>
+        </div>
+
+        <!-- Key input -->
+        <input type="text" id="keyInput" placeholder="Enter the secret key">
+        <button onclick="checkKey()" id="puzzle-button">Unlock</button>
+        <p id="feedback"></p>
+        <!-- Hidden message -->
+        <div id="popupOverlay" class="overlay">
+          <div class="popup" id="popup">
+            <h2 id="popup_h2">🎂 Many More Happy Returns of the Day My Precious Princess 🤍</h2>
+            <p id="popup_p1">
+              Today is a veryy special day... Today is the day where an angel from the heaven descended to Earth in the form of an absolutely beautiful young girl... 
+              Today is the day where we celebrate the existence of that gorgeous girl for 17 years in this world 
+              ( if you ask me we should celebrate the existence of a goddess like her every single day) 🎉🎉🎉
+            </p>
+            <p id="popup_p2">
+              People tend to not realize their own values so this is where i come in 😁... To remind you how of an amazing and wonderful person you are … 
+              In my 17 years of life ( yes I know I sound old 😅 ) but I have never seen a girl who is breathtaking like you… 
+              I mean look at you, you are smart and obsessed with Biology for some reason…. You are kind and respectful towards others, 
+              absolutely beautiful like even the moon would be jealous on how radiant you look ( especially in sareee 🫠 ), 
+              Plus your obsession about Taylor Swift ( Your mommy ) and food even thought you can’t finish it fully 🤭 makes you sooooo cutee and 
+              to be honest it makes me happy to hear you talk about things you like and you don’t realize how much I love to adore you when 
+              you talk about those things…. But my all-time favorite is you when you are angryy or jealous about something… Like you are sooo freaking cute literally a baby would 
+              lose to you in those terms… In these generation it is easier to find a red diamond ( which is considered to be the rarest diamond ) then
+              finding a girl like you who is a kudumbe ponnu 🤭... Maybe you don’t realize it but you are sooo lovable i mean loving you feels like breathing – it just happens 
+              naturally 😉 
+            </p>
+            <p id="popup_p3">
+              So, today is your day and I wish I could be there by your side and celebrating this special day but I’m sure that one day I will be 
+              by your side as your friend or your best friend or your prince or your knight in shining armor or even as your man but I’m sure that I’ll be there 
+              for you whenever you need me and i will never leave you unless you say so…  it is a promise that i am willing to make 🤞🏻
+              So enjoyy your day to the fullest and be happy and always keep on smiling… I’m sure you would look stunning when you smile and 
+              thank you for everything you have done for me… The past five months with you was the best time I ever had, even though we faced difficulties, 
+              I felt like it was nothing as long as you were by my side... Sorry for things that I may have did unknowingly which hurt you. We don’t know what the future holds for us
+              but i hope that i can be in yours by your side sharing your ups and downs…  I know we are too young to talk about forever but with you even forever feels too short…  
+              Know that i will always be wishing and praying for your health, success and happiness…  You deserve those dear so takee caree of yourself
+              and never lose the energy that you always carry ( i honestly love your energy )…  Always be happy and cheerful because 
+              your happiness will always be more important to me than my own… Good luck for SPM madam… Dont worry about it and do your absolute best like you always do,
+              you kan smart girl… You can do it dear dont worry about the results and keep pushing forward… I know how much effort you put into it and i am sure you will 
+              get the your result with flying colors… I will always be proud of you my dear girl 🤍
+            </p>
+            <p id="popup_p4">
+              Once again Happy Birthday My Dear Aunty ( You are getting older as the day goes by 🤭 )
+            </p>
+            <p id="popup_p5">
+              P.S:
+            </p>
+            <p id="popup_p6"> 
+              I’m sorry for writing a lot 😅 and kinda making it emotional and sorry for taking screenshots of your stories. I just didn’t have any pictures of you with me 🥹. I hope you like 
+              it. I reallyy wished to see your reaction to this website but ig im not that lucky enough hahaha.. but im sure of one thing though im the most luckiest person to ever exist to have you in my life...
+              You are literally a blessing to me madam... A blessing that i wish to keep for eternity 😁
+            </p>
+            <button onclick="closePopup()" id="popup_button">Close</button>
+          </div>
+        </div>
+      </div>
+        <!-- <div class="divider"></div> -->
+        <!-- Letter/message block 
+        <section class="letter" aria-label="Message for the Princess">
+            <h3>Your Royal Message</h3>
+            <div class="page">
+            <p>My Message For You</p>
+            </div>
+        </section>
+        -->
+    </main>
+    <script>
+      /*
+        // Audio Loader
+        window.addEventListener("load", () => {
+          document.querySelectorAll("audio").forEach(audio => {
+            audio.load();
+          });
+        });
+      */
+      // 🎭 Curtain Opening Animation
+      const coverPage = document.getElementById("coverPage");
+      const enterButton = document.getElementById("enterButton");
+
+      enterButton.addEventListener("click", () => {
+        coverPage.classList.add("open");
+        bgMusic.play();
+
+        // Wait for the animation to finish before hiding the cover
+        setTimeout(() => {
+          coverPage.style.display = "none";
+        }, 1600);
+      });
+
+
+
+      // 🎶 Background music control
+      const bgMusic = document.getElementById("bgMusic");
+
+      // Auto-play when page loads
+      window.addEventListener("load", () => {
+        bgMusic.volume = 0.4; // keep it soft
+        bgMusic.play().catch(() => {
+          console.log("Autoplay blocked — user will need to interact first.");
+        });
+      });
+
+        /* ===== Sparkling Stars ===== */
+        (function makeSparkles(){
+          const N = 70; // number of sparkles
+          const frag = document.createDocumentFragment();
+          const vw = () => Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+          const vh = () => Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        
+          for(let i=0;i<N;i++){
+            const s = document.createElement('div');
+            s.className = 'sparkle';
+            const x = Math.random()*vw();
+            const y = Math.random()*vh();
+            s.style.left = x+'px';
+            s.style.top  = y+'px';
+            s.style.animationDelay = (Math.random()*3)+'s';
+            s.style.opacity = 0.5 + Math.random()*0.5;
+            frag.appendChild(s);
+          }
+          document.body.appendChild(frag);
+        
+          // gently reposition on resize
+          window.addEventListener('resize', () => {
+            document.querySelectorAll('.sparkle').forEach(el=>{
+              el.style.left = (Math.random()*vw())+'px';
+              el.style.top  = (Math.random()*vh())+'px';
+            });
+          });
+        })();
+
+        /* ===== Hearts flowing up ===== */
+        (function floatingHearts(){
+        const EMOJIS = ['💖','💗','❤️','💝'];
+        function spawn(){
+            const h = document.createElement('div');
+            h.className = 'float-heart';
+            h.textContent = EMOJIS[Math.floor(Math.random()*EMOJIS.length)];
+            const x = 5 + Math.random()*90;     // vw %
+            const dur = 6 + Math.random()*6;    // seconds
+            const delay = Math.random()*1.2;
+            h.style.left = x+'vw';
+            h.style.bottom = '-4vh';
+            h.style.animationDuration = dur+'s';
+            h.style.animationDelay = delay+'s';
+            h.style.transform = `translateY(0) scale(${0.8 + Math.random()*0.6})`;
+            document.body.appendChild(h);
+            setTimeout(()=>h.remove(), (dur+1.5)*1000);
+        }
+        // spawn at a comfy cadence
+        setInterval(spawn, 1000);
+        })();
+
+        //Typing Effect
+        function typeText(elementId, speed = 80, callback = null){
+          const elemen = document.getElementById(elementId);
+          const text = elemen.innerHTML;
+          elemen.innerHTML = "";
+          elemen.style.opacity = 1;
+          let i = 0;
+
+          function typing() {
+            if(i < text.length) {
+              elemen.innerHTML += text.charAt(i);
+              i ++;
+              setTimeout(typing,speed);
+            } else if (callback) {
+              callback(); // call next paragraph when done
+            }
+          }
+          typing();
+        }
+
+        /* Puzzle Segment */
+        // ✅ Set your own secret key here
+        const correctKey = "I LOVE YOU"; 
+
+        function checkKey() {
+          let input = document.getElementById("keyInput").value.trim().toUpperCase();
+          let feedback = document.getElementById("feedback");
+
+          if (input === correctKey) {
+            showPopup();
+          } else {
+            feedback.textContent = "❌ Wrong key, try again!";
+            feedback.style.color = "pink";
+          }
+        }
+        // Message Pop Up
+        var isTyped = false;
+        function showPopup() {
+          document.getElementById("popupOverlay").style.display = "flex";
+          // Type title first, then paragraphs one by one
+          if (isTyped == false){
+            isTyped = true;
+
+            typeText("popup_h2", 50, function() {
+              typeText("popup_p1", 40, function() {
+                typeText("popup_p2", 40, function() {
+                  typeText("popup_p3", 40, function() {
+                    typeText("popup_p4", 40, function() {
+                      typeText("popup_p5", 40, function() {
+                        typeText("popup_p6", 40);
+                      });
+                    });
+                  });
+                });
+              });
+            });
+          }
+        }
+
+        function closePopup() {
+          document.getElementById("popupOverlay").style.display = "none";
+        }
+
+        /*
+        // 🔊 Preload and decode all audio on page load (silent trick)
+        window.addEventListener("load", () => {
+          document.querySelectorAll("audio").forEach(audio => {
+            audio.volume = 0.01; // almost silent
+            audio.play().then(() => {
+            audio.pause();
+            audio.currentTime = 0;
+            audio.volume = 100; // reset to normal volume
+            }).catch(() => {
+              // Autoplay restrictions might block, safe to ignore
+            });
+          });
+        });
+        */
+        // Play individual songs on hover
+        document.querySelectorAll('.photo-item').forEach((item, index) => {
+          const audio = item.querySelector("audio");
+  
+          item.addEventListener("mouseenter", () => {
+            bgMusic.pause();
+            stopAllSongs(); // stop other songs
+            audio.currentTime = 0;
+            audio.play();
+            
+          });
+  
+          item.addEventListener("mouseleave", () => {
+            audio.pause();
+            bgMusic.play();
+          });
+        });
+
+        function stopAllSongs() {
+          document.querySelectorAll("audio").forEach(audio => {
+            if(audio.id !== "bgMusic"){
+              audio.pause();
+              audio.currentTime = 0;
+            }
+          });
+        }
+
+        function changeDividerStyle(background , filter) {
+          const dividers = document.querySelectorAll(".divider");
+          dividers.forEach(divider => {
+            divider.style.background = background;
+            divider.style.filter = filter;
+          });
+        }
+
+        // Define both English and Tamil song sets
+        const englishSongs = [
+          "Resources\\I Wanna Be Yours - Arctic Monkeys.mp3",
+          "Resources\\Perfect - Ed Sheeran.mp3",
+          "Resources\\Divine (Acoustic Version) - Krishnahazar.mp3",
+          "Resources\\Keenan Te - Rest of My Life (Official Lyric Video) - KeenanTeVEVO.mp3"
+        ];
+
+        const tamilSongs = [
+          "Resources\\Un-Vizhigalil.mp3",
+          "Resources\\Azhage.mp3",
+          "Resources\\Nee-Kattum-Selai-MassTamilan.com.mp3",
+          "Resources\\Theethiriyaai-MassTamilan.dev.mp3"
+        ];
+
+        // Function to change the songs when slider is toggled
+        function toggleLanguage() {
+          const isTamil = document.getElementById("languageSlider").checked;
+          const selectedSongs = isTamil ? tamilSongs : englishSongs;
+
+          document.querySelectorAll(".photo-item audio").forEach((audio, index) => {
+            const wasPlaying = !audio.paused; // Remember if the song was playing
+            audio.pause();
+            audio.currentTime = 0; // reset
+
+
+            audio.src = selectedSongs[index]; // swap the source
+            audio.load(); // load new song
+
+            if (wasPlaying) audio.play(); // resume if hovered
+          });
+        }
+
+        // Declaration of Variables
+        const TSchecker = document.getElementById("TSthemeSlider");
+        const MSchecker = document.getElementById("MSthemeSlider");
+        const CSchecker = document.getElementById("CSthemeSlider");
+        const body = document.body;
+        const title = document.getElementById("pageTitle");
+        const subtitle = document.getElementById("pageSubTitle");
+        const photoframe = document.getElementById("photo-frame");
+        const photoitem = document.getElementsByClassName("photo-item");
+        const poem1 = document.getElementById("poem1");
+        const h3_1 = document.getElementById("h3_1");
+        const box_top1 = document.getElementById("box_top1");
+        const ribbon_h1 = document.getElementById("ribbon-h1");
+        const ribbon_v1 = document.getElementById("ribbon-v1");
+        const poem2 = document.getElementById("poem2");
+        const h3_2 = document.getElementById("h3_2");
+        const box_top2 = document.getElementById("box_top2");
+        const ribbon_h2 = document.getElementById("ribbon-h2");
+        const ribbon_v2 = document.getElementById("ribbon-v2");
+        const puzzle_container = document.getElementById("puzzle-container");
+        const puzzle_button = document.getElementById("puzzle-button");
+        const puzzle_input = document.getElementById("keyInput");
+        const popup = document.getElementById("popup");
+        const popup_h2 = document.getElementById("popup_h2");
+        const popup_button = document.getElementById("popup_button");
+
+        // Taylor Swift Theme Toggle
+        function toggleThemeTS() {
+
+          if (document.getElementById("TSthemeSlider").checked) {
+            MSchecker.checked = false;
+            CSchecker.checked = false;
+            // Taylor Swift Theme
+            title.innerText = "Happy Birthday My Dear Swiftie";
+            body.style.background = "radial-gradient(1200px 700px at 20% -10%, #a8d8f033 0%, transparent 60%), radial-gradient(900px 500px at 110% -20%, #5ea9dd22 0%, transparent 60%), radial-gradient(1200px 700px at -10% 120%, #f8c9d415 0%, transparent 60%), linear-gradient(180deg, #0f3057 0%, #08192d 100%)";
+            body.style.color = "#f7faff";
+            // body.before.style.color = "radial-gradient(2px 2px at 20% 30%, #ffffffcc 20%, transparent 22%), radial-gradient(1.5px 1.5px at 70% 60%, #a8d8f0b0 20%, transparent 22%), radial-gradient(1.2px 1.2px at 10% 80%, #ffffffa0 20%, transparent 22%), radial-gradient(1.8px 1.8px at 85% 25%, #d9e6f2cc 20%, transparent 22%), radial-gradient(1px 1px at 45% 10%, #b3dbff99 20%, transparent 22%)";
+            title.style.color = "#f7faff";
+            title.style.textShadow = "0 0 10px #ffffff66, 0 0 22px #d9e6f2, 0 0 40px #5ea9dd";
+            subtitle.style.color = "#a8d8f0";
+            subtitle.innerText = "A High School Celebration In 1989"
+           // divider.style.background = "repeating-linear-gradient(90deg, #d9e6f2 0 16px, transparent 16px 28px)";
+           // divider.style.filter = "drop-shadow(0 0 6px #5ea9dd)";
+            photoframe.style.background = "#0f3057";
+            photoframe.style.border = "2px solid #d9e6f2";
+            photoframe.style.boxShadow = "0 12px 28px #0006, inset 0 0 0 1px #ffffff22";
+            poem1.style.border = "1px solid #d9e6f2";
+            poem1.style.background = "#0f3057";
+            h3_1.style.color = "#f7faff";
+            h3_1.style.textShadow = "0 0 6px #d9e6f2";
+            box_top1.style.background = "linear-gradient(145deg, #a8d8f0, #5ea9dd)";
+            ribbon_h1.style.background = "#f8c9d4";
+            ribbon_v1.style.background = "#f8c9d4";
+            poem2.style.border = "1px solid #d9e6f2";
+            poem2.style.background = "#0f3057";
+            h3_2.style.color = "#f7faff";
+            h3_2.style.textShadow = "0 0 6px #d9e6f2";
+            box_top2.style.background = "linear-gradient(145deg, #a8d8f0, #5ea9dd)";
+            ribbon_h2.style.background = "#f8c9d4";
+            ribbon_v2.style.background = "#f8c9d4";
+            puzzle_container.style.border = "2px solid #5ea9dd";
+            puzzle_container.style.background = "#0f3057";
+            puzzle_input.style.border = "2px solid #d9e6f2";
+            puzzle_button.style.background = "#5ea9dd";
+            puzzle_button.style.border = "2px solid #a8d8f0";
+            puzzle_button.style.color = "#f7faff";
+            popup.style.background = "linear-gradient(145deg, #a8d8f0, #5ea9dd)";
+            popup.style.color = "#0f3057";
+            popup.style.boxShadow = "0 0 28px #f7faff";
+            popup_h2.style.color = "#0f3057";
+            popup_button.style.background = "#f8c9d4";
+            popup_button.style.color = "#0f3057";
+
+            document.querySelectorAll('.photo-item').forEach((item, index) => {
+              const img = item.querySelector("img");
+  
+              item.addEventListener("mouseenter", () => {
+                img.style.boxShadow = " 0 8px 22px rgba(168, 216, 240, 0.7)"
+              });
+  
+              item.addEventListener("mouseleave", () => {
+                img.style.boxShadow = "0 0 0 0";
+              });
+            });
+
+            puzzle_button.addEventListener("mouseenter", () => {
+              puzzle_button.style.background = "#a8d8f0";
+              puzzle_button.style.color = "#0f3057";
+              puzzle_button.style.borderColor = "#a8d8f0";
+            });
+
+            puzzle_button.addEventListener("mouseleave", () => {
+              puzzle_button.style.background = "#5ea9dd";
+              puzzle_button.style.color = "#f7faff";
+              puzzle_button.style.borderColor = "#a8d8f0";
+            });
+
+            popup_button.addEventListener("mouseenter", () => {
+              popup_button.style.background = "#5ea9dd";
+              popup_button.style.color = "#f7faff";
+            });
+
+            popup_button.addEventListener("mouseleave", () => {
+              popup_button.style.background = "#f8c9d4";
+              popup_button.style.color = "#0f3057";
+            });
+
+            changeDividerStyle("repeating-linear-gradient(90deg,#d9e6f2 0 16px, transparent 16px 28px)","drop-shadow(0 0 6px #5ea9dd)");
+            
+            // dividerColor("#d9e6f2");
+            // Use querySelectorAll() and loop through it to style mutliple things like <p>
+            // Use .addEventListener('mouseover', function() to change color when hovered 
+
+          } else {
+            // Default Theme ( Princess )
+            title.innerText = "Happy Birthday My Dear Princess";
+            body.style.background = "radial-gradient(1200px 700px at 20% -10%, #174a9f33 0%, transparent 60%), radial-gradient(900px 500px at 110% -20%, #8d2cff22 0%, transparent 60%), radial-gradient(1200px 700px at -10% 120%, #ff4da615 0%, transparent 60%), linear-gradient(180deg, #071634 0%, #030a1a 100%)";
+            body.style.color = "#f8f9ff";
+            // body.before.style.color = "radial-gradient(2px 2px at 20% 30%, #ffffffc9 20%, transparent 22%), radial-gradient(1.5px 1.5px at 70% 60%, #c5e7ffb0 20%, transparent 22%), radial-gradient(1.2px 1.2px at 10% 80%, #ffffffa0 20%, transparent 22%), radial-gradient(1.8px 1.8px at 85% 25%, #ffffffbd 20%, transparent 22%), radial-gradient(1px 1px at 45% 10%, #b3e5ff99 20%, transparent 22%)";
+            title.style.color = "#fff";
+            title.style.textShadow = "0 0 10px #ffffff66, 0 0 22px #ff79b7, 0 0 40px #ff4da6";
+            subtitle.style.color = "#ff79b7";
+            subtitle.innerText = "A Royal Celebration Among the Stars"
+           // divider.style.background = "repeating-linear-gradient(90deg, #f8f9ff 0 16px, transparent 16px 28px)";
+           // divider.style.filter = "drop-shadow(0 0 6px #ffffffc6)";
+            photoframe.style.background = "#0c1e46";
+            photoframe.style.border = "2px solid #ff4da6";
+            photoframe.style.boxShadow = "0 12px 28px #00000080, inset 0 0 0 1px #ffffff12";
+            poem1.style.border = "1px solid #ff4da6";
+            poem1.style.background = "linear-gradient(180deg, #08132edd, #040b1cdd)";
+            h3_1.style.color = "#ffe9f6";
+            h3_1.style.textShadow = "0 0 6px #ff4da6";
+            box_top1.style.background = "linear-gradient(145deg, #ff72b8, #fe4894)";
+            ribbon_h1.style.background = "#ffa9f9";
+            ribbon_v1.style.background = "#ffa9f9";
+            poem2.style.border = "1px solid #ff4da6";
+            poem2.style.background = "linear-gradient(180deg, #08132edd, #040b1cdd)";
+            h3_2.style.color = "#ffe9f6";
+            h3_2.style.textShadow = "0 0 6px #ff4da6";
+            box_top2.style.background = "linear-gradient(145deg, #ff72b8, #fe4894)";
+            ribbon_h2.style.background = "#ffa9f9";
+            ribbon_v2.style.background = "#ffa9f9";
+            puzzle_container.style.border = "2px solid #ff4da6";
+            puzzle_container.style.background = "#0c1e46";
+            puzzle_input.style.border = "2px solid #ff79b7";
+            puzzle_button.style.background = "#ff79b7";
+            puzzle_button.style.border = "2px solid #ff4da6";
+            puzzle_button.style.color = "#f8f9ff";
+            popup.style.background = "linear-gradient(145deg, #863d6b, #b8003d)";
+            popup.style.color = "#fff";
+            popup.style.boxShadow = "0 0 25px #ff4da6";
+            popup_h2.style.color = "rgb(255, 240, 242)";
+            popup_button.style.background = "rgb(255, 177, 250)";
+            popup_button.style.color = "#fff";
+
+            document.querySelectorAll('.photo-item').forEach((item, index) => {
+              const img = item.querySelector("img");
+  
+              item.addEventListener("mouseenter", () => {
+                img.style.boxShadow = " 0 8px 22px rgba(255, 105, 180, 0.7)"
+              });
+  
+              item.addEventListener("mouseleave", () => {
+                img.style.boxShadow = "0 0 0 ";
+              });
+            });
+
+            puzzle_button.addEventListener("mouseenter", () => {
+              puzzle_button.style.background = "#ff9ed1";
+              puzzle_button.style.borderColor = "#ff4da6";
+            });
+
+            puzzle_button.addEventListener("mouseleave", () => {
+              puzzle_button.style.background = "#ff79b7";
+              puzzle_button.style.borderColor = "#ff4da6";
+
+            });
+
+            popup_button.addEventListener("mouseenter", () => {
+              popup_button.style.background = "#ff69b4";
+              popup_button.style.color = "#ffffff";
+            });
+
+            popup_button.addEventListener("mouseleave", () => {
+              popup_button.style.background = "rgb(255, 177, 250)";
+              popup_button.style.color = "#fff";
+            });
+
+            changeDividerStyle("repeating-linear-gradient(90deg,#ff79b7 0 16px, transparent 16px 28px)","drop-shadow(0 0 6px #ff79b7)");
+            // Use querySelectorAll() and loop through it to style mutliple things like <p>
+            // Use .addEventListener('mouseover', function() to change color when hovered 
+            
+          }
+        }
+        
+        // Miraculous Lady Bug Theme Toggle
+        function toggleThemeMS() {
+          
+          if (document.getElementById("MSthemeSlider").checked) {
+            TSchecker.checked = false;
+            CSchecker.checked = false;
+            // Miraculous Theme (RED)
+            title.innerText = "Happy Birthday My Dear Miraculer";
+            body.style.background = "linear-gradient(180deg, #250006, #1c1c3c, #0a0a0a)";
+            body.style.color = "#f5f5f7";
+            // body.before.style.color = "radial-gradient(2px 2px at 20% 30%, #ffffffcc 20%, transparent 22%), radial-gradient(1.5px 1.5px at 70% 60%, #a8d8f0b0 20%, transparent 22%), radial-gradient(1.2px 1.2px at 10% 80%, #ffffffa0 20%, transparent 22%), radial-gradient(1.8px 1.8px at 85% 25%, #d9e6f2cc 20%, transparent 22%), radial-gradient(1px 1px at 45% 10%, #b3dbff99 20%, transparent 22%)";
+            title.style.color = "#f5f5f7";
+            title.style.textShadow = "0 0 12px #e60026, 0 0 28px #da697c, 0 0 40px #da697c";
+            subtitle.style.color = "#ffb6d9";
+            subtitle.innerText = "A Miraculous Celebration Under the Paris Night"
+           // divider.style.background = "repeating-linear-gradient(90deg, #d9e6f2 0 16px, transparent 16px 28px)";
+           // divider.style.filter = "drop-shadow(0 0 6px #5ea9dd)";
+            photoframe.style.background = "#2b2b2b";
+            photoframe.style.border = "2px solid #e60026";
+            photoframe.style.boxShadow = "0 12px 28px #0006, inset 0 0 0 1px #da697c 55";
+            poem1.style.border = "1px solid #e60026";
+            poem1.style.background = "#2b2b2b";
+            h3_1.style.color = "#f7faff";
+            h3_1.style.textShadow = "0 0 6px #e60026";
+            box_top1.style.background = "linear-gradient(145deg, #e60026, #b0001c)";
+            ribbon_h1.style.background = "#da697c";
+            ribbon_v1.style.background = "#da697c";
+            poem2.style.border = "1px solid #e60026";
+            poem2.style.background = "#2b2b2b";
+            h3_2.style.color = "#f7faff";
+            h3_2.style.textShadow = "0 0 6px #e60026";
+            box_top2.style.background = "linear-gradient(145deg, #e60026, #b0001c)";
+            ribbon_h2.style.background = "#da697c";
+            ribbon_v2.style.background = "#da697c";
+            puzzle_container.style.border = "2px solid #e60026";
+            puzzle_container.style.background = "#2b2b2b";
+            puzzle_input.style.border = "2px solid #ffb6d9";
+            puzzle_button.style.background = "#da697c";
+            puzzle_button.style.border = "2px solid #e60026";
+            puzzle_button.style.color = "#f5f5f7";
+            popup.style.background = "linear-gradient(145deg, #e60026, #b0001c)";
+            popup.style.color = "#f5f5f7";
+            popup.style.boxShadow = "0 0 28px #da697c";
+            popup_h2.style.color = "#f5f5f7";
+            popup_button.style.background = "#ffd76a";
+            popup_button.style.color = "#0a0a0a";
+
+            document.querySelectorAll('.photo-item').forEach((item, index) => {
+              const img = item.querySelector("img");
+  
+              item.addEventListener("mouseenter", () => {
+                img.style.boxShadow = " 0 8px 22px #e60026"
+              });
+  
+              item.addEventListener("mouseleave", () => {
+                img.style.boxShadow = "0 0 0 0";
+              });
+            });
+
+            puzzle_button.addEventListener("mouseenter", () => {
+              puzzle_button.style.background = "#e60026";
+              puzzle_button.style.color = "#f5f5f7";
+              puzzle_button.style.borderColor = "#e60026";
+            });
+
+            puzzle_button.addEventListener("mouseleave", () => {
+              puzzle_button.style.background = "#da697c";
+              puzzle_button.style.borderColor = "#e60026";
+              puzzle_button.style.color = "#f5f5f7";
+            });
+
+            popup_button.addEventListener("mouseenter", () => {
+              popup_button.style.background = "#ffb6d9";
+              popup_button.style.color = "#0a0a0a";
+            });
+
+            popup_button.addEventListener("mouseleave", () => {
+              popup_button.style.background = "#ffd76a";
+              popup_button.style.color = "#0a0a0a";
+            });
+            
+            changeDividerStyle("repeating-linear-gradient(90deg,#da697c 0 16px, transparent 16px 28px)","drop-shadow(0 0 6px #da697c)");
+            
+            // Use querySelectorAll() and loop through it to style mutliple things like <p>
+            // Use .addEventListener('mouseover', function() to change color when hovered 
+          } else {
+            // Default Theme ( Princess )
+            title.innerText = "Happy Birthday My Dear Princess";
+            body.style.background = "radial-gradient(1200px 700px at 20% -10%, #174a9f33 0%, transparent 60%), radial-gradient(900px 500px at 110% -20%, #8d2cff22 0%, transparent 60%), radial-gradient(1200px 700px at -10% 120%, #ff4da615 0%, transparent 60%), linear-gradient(180deg, #071634 0%, #030a1a 100%)";
+            body.style.color = "#f8f9ff";
+            // body.before.style.color = "radial-gradient(2px 2px at 20% 30%, #ffffffc9 20%, transparent 22%), radial-gradient(1.5px 1.5px at 70% 60%, #c5e7ffb0 20%, transparent 22%), radial-gradient(1.2px 1.2px at 10% 80%, #ffffffa0 20%, transparent 22%), radial-gradient(1.8px 1.8px at 85% 25%, #ffffffbd 20%, transparent 22%), radial-gradient(1px 1px at 45% 10%, #b3e5ff99 20%, transparent 22%)";
+            title.style.color = "#fff";
+            title.style.textShadow = "0 0 10px #ffffff66, 0 0 22px #ff79b7, 0 0 40px #ff4da6";
+            subtitle.style.color = "#ff79b7";
+            subtitle.innerText = "A Royal Celebration Among the Stars"
+           // divider.style.background = "repeating-linear-gradient(90deg, #f8f9ff 0 16px, transparent 16px 28px)";
+           // divider.style.filter = "drop-shadow(0 0 6px #ffffffc6)";
+            photoframe.style.background = "#0c1e46";
+            photoframe.style.border = "2px solid #ff4da6";
+            photoframe.style.boxShadow = "0 12px 28px #00000080, inset 0 0 0 1px #ffffff12";
+            poem1.style.border = "1px solid #ff4da6";
+            poem1.style.background = "linear-gradient(180deg, #08132edd, #040b1cdd)";
+            h3_1.style.color = "#ffe9f6";
+            h3_1.style.textShadow = "0 0 6px #ff4da6";
+            box_top1.style.background = "linear-gradient(145deg, #ff72b8, #fe4894)";
+            ribbon_h1.style.background = "#ffa9f9";
+            ribbon_v1.style.background = "#ffa9f9";
+            poem2.style.border = "1px solid #ff4da6";
+            poem2.style.background = "linear-gradient(180deg, #08132edd, #040b1cdd)";
+            h3_2.style.color = "#ffe9f6";
+            h3_2.style.textShadow = "0 0 6px #ff4da6";
+            box_top2.style.background = "linear-gradient(145deg, #ff72b8, #fe4894)";
+            ribbon_h2.style.background = "#ffa9f9";
+            ribbon_v2.style.background = "#ffa9f9";
+            puzzle_container.style.border = "2px solid #ff4da6";
+            puzzle_container.style.background = "#0c1e46";
+            puzzle_input.style.border = "2px solid #ff79b7";
+            puzzle_button.style.background = "#ff79b7";
+            puzzle_button.style.border = "2px solid #ff4da6";
+            puzzle_button.style.color = "#f8f9ff";
+            popup.style.background = "linear-gradient(145deg, #863d6b, #b8003d)";
+            popup.style.color = "#fff";
+            popup.style.boxShadow = "0 0 25px #ff4da6";
+            popup_h2.style.color = "rgb(255, 240, 242)";
+            popup_button.style.background = "rgb(255, 177, 250)";
+            popup_button.style.color = "#fff";
+
+            document.querySelectorAll('.photo-item').forEach((item, index) => {
+              const img = item.querySelector("img");
+  
+              item.addEventListener("mouseenter", () => {
+                img.style.boxShadow = " 0 8px 22px rgba(255, 105, 180, 0.7)"
+              });
+  
+              item.addEventListener("mouseleave", () => {
+                img.style.boxShadow = "0 0 0 ";
+              });
+            });
+
+            puzzle_button.addEventListener("mouseenter", () => {
+              puzzle_button.style.background = "#ff9ed1";
+              puzzle_button.style.borderColor = "#ff4da6";
+            });
+
+            puzzle_button.addEventListener("mouseleave", () => {
+              puzzle_button.style.background = "#ff79b7";
+              puzzle_button.style.borderColor = "#ff4da6";
+
+            });
+
+            popup_button.addEventListener("mouseenter", () => {
+              popup_button.style.background = "#ff69b4";
+              popup_button.style.color = "#ffffff";
+            });
+
+            popup_button.addEventListener("mouseleave", () => {
+              popup_button.style.background = "rgb(255, 177, 250)";
+              popup_button.style.color = "#fff";
+            });
+
+            changeDividerStyle("repeating-linear-gradient(90deg,#ff79b7 0 16px, transparent 16px 28px)","drop-shadow(0 0 6px #ff79b7)");
+
+            // Use querySelectorAll() and loop through it to style mutliple things like <p>
+            // Use .addEventListener('mouseover', function() to change color when hovered 
+            
+          }
+        }
+
+        // Cat Noir Theme Toggle
+        function toggleThemeCS() {
+
+          if (document.getElementById("CSthemeSlider").checked) {
+            TSchecker.checked = false;
+            MSchecker.checked = false;
+            // Miraculous Theme (GREEN)
+            title.innerText = "Happy Birthday My Dear Ladybug";
+            body.style.background = "radial-gradient(1000px 600px at 20% -10%, #9ef01a15 0%, transparent 60%),radial-gradient(800px 400px at 110% -20%, #c0c0c020 0%, transparent 60%), linear-gradient(180deg, #0d0d0d 0%, #000 100%)";
+            body.style.color = "#f5f5f7";
+            // body.before.style.color = "radial-gradient(2px 2px at 20% 30%, #ffffffcc 20%, transparent 22%), radial-gradient(1.5px 1.5px at 70% 60%, #a8d8f0b0 20%, transparent 22%), radial-gradient(1.2px 1.2px at 10% 80%, #ffffffa0 20%, transparent 22%), radial-gradient(1.8px 1.8px at 85% 25%, #d9e6f2cc 20%, transparent 22%), radial-gradient(1px 1px at 45% 10%, #b3dbff99 20%, transparent 22%)";
+            title.style.color = "#f5f5f7";
+            title.style.textShadow = "0 0 20px #9ef01a, 0 0 24px #0d0d0d, 0 0 40px #ccff66";
+            subtitle.style.color = "#9ef01a";
+            subtitle.innerText = "A Purr-fect Celebration Under the Moonlight";
+           // divider.style.background = "repeating-linear-gradient(90deg, #d9e6f2 0 16px, transparent 16px 28px)";
+           // divider.style.filter = "drop-shadow(0 0 6px #5ea9dd)";
+            photoframe.style.background = "#111111";
+            photoframe.style.border = "2px solid #9ef01a";
+            photoframe.style.boxShadow = "0 12px 28px #0006, inset 0 0 0 1px #9ef01a 55";
+            poem1.style.border = "1px solid #9ef01a";
+            poem1.style.background = "#111111";
+            h3_1.style.color = "#f7faff";
+            h3_1.style.textShadow = "0 0 6px #9ef01a";
+            box_top1.style.background = "linear-gradient(145deg, #0d0d0d, #1a1a1a)";
+            ribbon_h1.style.background = "#9ef01a";
+            ribbon_v1.style.background = "#9ef01a";
+            poem2.style.border = "1px solid #9ef01a";
+            poem2.style.background = "#111111";
+            h3_2.style.color = "#f7faff";
+            h3_2.style.textShadow = "0 0 6px #9ef01a";
+            box_top2.style.background = "linear-gradient(145deg, #0d0d0d, #1a1a1a)";
+            ribbon_h2.style.background = "#9ef01a";
+            ribbon_v2.style.background = "#9ef01a";
+            puzzle_container.style.border = "2px solid #9ef01a";
+            puzzle_container.style.background = "#111111";
+            puzzle_input.style.border = "2px solid #9ef01a";
+            puzzle_button.style.background = "#9ef01a";
+            puzzle_button.style.border = "2px solid #d2ff90";
+            puzzle_button.style.color = "#0d0d0d";
+            popup.style.background = "linear-gradient(145deg,#0d0d0d, #1a1a1a)";
+            popup.style.color = "#f5f5f7";
+            popup.style.boxShadow = "0 0 28px #9ef01a";
+            popup_h2.style.color = "#f5f5f7";
+            popup_button.style.background = "#9ef01a";
+            popup_button.style.color = "#0d0d0d";
+
+            document.querySelectorAll('.photo-item').forEach((item, index) => {
+              const img = item.querySelector("img");
+  
+              item.addEventListener("mouseenter", () => {
+                img.style.boxShadow = " 0 8px 22px #9ef01a"
+              });
+  
+              item.addEventListener("mouseleave", () => {
+                img.style.boxShadow = "0 0 0 0";
+              });
+            });
+
+            puzzle_button.addEventListener("mouseenter", () => {
+              puzzle_button.style.background = "#c0c0c0";
+              puzzle_button.style.color = "#0d0d0d";
+              puzzle_button.style.borderColor = "#d9e6f2";
+            });
+
+            puzzle_button.addEventListener("mouseleave", () => {
+              puzzle_button.style.background = "#9ef01a";
+              puzzle_button.style.borderColor = "#d2ff90";
+              puzzle_button.style.color = "#0d0d0d";
+            });
+
+            popup_button.addEventListener("mouseenter", () => {
+              popup_button.style.background = "#c0c0c0";
+              popup_button.style.color = "#0d0d0d";
+            });
+
+            popup_button.addEventListener("mouseleave", () => {
+              popup_button.style.background = "#9ef01a";
+              popup_button.style.color = "#0d0d0d";
+            });
+            
+            changeDividerStyle("repeating-linear-gradient(90deg,#9ef01a 0 16px, transparent 16px 28px)","drop-shadow(0 0 6px #9ef01a)");
+            
+            // Use querySelectorAll() and loop through it to style mutliple things like <p>
+            // Use .addEventListener('mouseover', function() to change color when hovered 
+          } else {
+            // Default Theme ( Princess )
+            title.innerText = "Happy Birthday My Dear Princess";
+            body.style.background = "radial-gradient(1200px 700px at 20% -10%, #174a9f33 0%, transparent 60%), radial-gradient(900px 500px at 110% -20%, #8d2cff22 0%, transparent 60%), radial-gradient(1200px 700px at -10% 120%, #ff4da615 0%, transparent 60%), linear-gradient(180deg, #071634 0%, #030a1a 100%)";
+            body.style.color = "#f8f9ff";
+            // body.before.style.color = "radial-gradient(2px 2px at 20% 30%, #ffffffc9 20%, transparent 22%), radial-gradient(1.5px 1.5px at 70% 60%, #c5e7ffb0 20%, transparent 22%), radial-gradient(1.2px 1.2px at 10% 80%, #ffffffa0 20%, transparent 22%), radial-gradient(1.8px 1.8px at 85% 25%, #ffffffbd 20%, transparent 22%), radial-gradient(1px 1px at 45% 10%, #b3e5ff99 20%, transparent 22%)";
+            title.style.color = "#fff";
+            title.style.textShadow = "0 0 10px #ffffff66, 0 0 22px #ff79b7, 0 0 40px #ff4da6";
+            subtitle.style.color = "#ff79b7";
+            subtitle.innerText = "A Royal Celebration Among the Stars"
+           // divider.style.background = "repeating-linear-gradient(90deg, #f8f9ff 0 16px, transparent 16px 28px)";
+           // divider.style.filter = "drop-shadow(0 0 6px #ffffffc6)";
+            photoframe.style.background = "#0c1e46";
+            photoframe.style.border = "2px solid #ff4da6";
+            photoframe.style.boxShadow = "0 12px 28px #00000080, inset 0 0 0 1px #ffffff12";
+            poem1.style.border = "1px solid #ff4da6";
+            poem1.style.background = "linear-gradient(180deg, #08132edd, #040b1cdd)";
+            h3_1.style.color = "#ffe9f6";
+            h3_1.style.textShadow = "0 0 6px #ff4da6";
+            box_top1.style.background = "linear-gradient(145deg, #ff72b8, #fe4894)";
+            ribbon_h1.style.background = "#ffa9f9";
+            ribbon_v1.style.background = "#ffa9f9";
+            poem2.style.border = "1px solid #ff4da6";
+            poem2.style.background = "linear-gradient(180deg, #08132edd, #040b1cdd)";
+            h3_2.style.color = "#ffe9f6";
+            h3_2.style.textShadow = "0 0 6px #ff4da6";
+            box_top2.style.background = "linear-gradient(145deg, #ff72b8, #fe4894)";
+            ribbon_h2.style.background = "#ffa9f9";
+            ribbon_v2.style.background = "#ffa9f9";
+            puzzle_container.style.border = "2px solid #ff4da6";
+            puzzle_container.style.background = "#0c1e46";
+            puzzle_input.style.border = "2px solid #ff79b7";
+            puzzle_button.style.background = "#ff79b7";
+            puzzle_button.style.border = "2px solid #ff4da6";
+            puzzle_button.style.color = "#f8f9ff";
+            popup.style.background = "linear-gradient(145deg, #863d6b, #b8003d)";
+            popup.style.color = "#fff";
+            popup.style.boxShadow = "0 0 25px #ff4da6";
+            popup_h2.style.color = "rgb(255, 240, 242)";
+            popup_button.style.background = "rgb(255, 177, 250)";
+            popup_button.style.color = "#fff";
+
+            document.querySelectorAll('.photo-item').forEach((item, index) => {
+              const img = item.querySelector("img");
+  
+              item.addEventListener("mouseenter", () => {
+                img.style.boxShadow = " 0 8px 22px rgba(255, 105, 180, 0.7)"
+              });
+  
+              item.addEventListener("mouseleave", () => {
+                img.style.boxShadow = "0 0 0 ";
+              });
+            });
+
+            puzzle_button.addEventListener("mouseenter", () => {
+              puzzle_button.style.background = "#ff9ed1";
+              puzzle_button.style.borderColor = "#ff4da6";
+            });
+
+            puzzle_button.addEventListener("mouseleave", () => {
+              puzzle_button.style.background = "#ff79b7";
+              puzzle_button.style.borderColor = "#ff4da6";
+
+            });
+
+            popup_button.addEventListener("mouseenter", () => {
+              popup_button.style.background = "#ff69b4";
+              popup_button.style.color = "#ffffff";
+            });
+
+            popup_button.addEventListener("mouseleave", () => {
+              popup_button.style.background = "rgb(255, 177, 250)";
+              popup_button.style.color = "#fff";
+            });
+
+            changeDividerStyle("repeating-linear-gradient(90deg,#ff79b7 0 16px, transparent 16px 28px)","drop-shadow(0 0 6px #ff79b7)");
+
+            // Use querySelectorAll() and loop through it to style mutliple things like <p>
+            // Use .addEventListener('mouseover', function() to change color when hovered  
+            
+          }
+        }
+
+      </script>
+</body>
+<style>
+    :root{
+    --blue-900:#071634;         /* deep galaxy blue */
+    --blue-800:#0b1e4a;
+    --blue-700:#132a63;
+    --pink-500:#ff4da6;         /* main pink lines */
+    --pink-400:#ff79b7;
+    --gold:#ffd76a;
+    --white:#f8f9ff;
+    --swift-lightblue:#b9bec7;
+    --swift-semiblue:#94a9bb;
+    --swift-blue:#5b86ae;
+    --swift-orage:#d24e35;
+    --swift-brown:#cf9e76;
+    --swift-sky: #a8d8f0;      /* soft sky blue */
+    --swift-ocean: #5ea9dd;    /* ocean blue */
+    --swift-navy: #0f3057;     /* deep navy */
+    --swift-cloud: #f7faff;    /* soft cloud white */
+    --swift-silver: #d9e6f2;   /* silver/gray-blue */
+    --swift-blush: #f8c9d4;    /* subtle pink blush */
+    --ladybug-red: #e60026;       /* Ladybug suit red */
+    --ladybug-deep: #b0001c;  /* darker accent red */
+    --ladybug-crimson: #250006;
+    --ladybug-lightred: #da697c;     
+    --noir-black: #0a0a0a;        /* Cat Noir suit black */
+    --noir-gray: #2b2b2b;         /* soft black/gray */
+    --cat-lightgreen : #d2ff90;
+    --cat-green: #a7f432;         /* Cat Noir neon green */
+    --cat-glow: #ccff66;          /* softer glow green */
+    --paris-night: #1c1c3c;       /* deep Paris night blue */
+    --paris-sky: #2e2e5c;         /* mid blue sky */
+    --soft-white: #f5f5f7;        /* soft light text */
+    --rose-blush: #ffb6d9;        /* Marinette pink blush */
+    --gold-charm: #ffd76a;        /* magical accent (Lucky Charm) */
+    --miraculous-black: #0d0d0d;  /* Noir black */
+    --miraculous-green: #9ef01a;  /* Cat Noir neon green (softened) */
+    --miraculous-silver: #c0c0c0; /* Metallic subtle silver */
+    --miraculous-white: #f5f5f7;  /* Clean white */
+    --miraculous-shadow: rgba(0, 0, 0, 0.7);
+    }
+  
+  /* ===== Cover Page ===== */
+  #coverPage {
+    position: fixed;
+    inset: 0;
+    color: #f8f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    z-index: 9999;
+    overflow: hidden;
+  }
+
+  .cover-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    animation: fadeIn 1.5s ease;
+  }
+
+  #coverPage h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 24px #5ea9dd;
+  }
+
+  #coverPage p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #d1d1ff;
+  }
+
+  #coverPage button {
+    background: #5b86ae;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+
+  #coverPage button:hover {
+    background: #4a6c8c;
+    transform: scale(1.05);
+  }
+
+  /* Curtains */
+  .curtain {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(160deg, #0b1e4a, #071634);
+    z-index: 1;
+    transition: transform 1.5s ease-in-out;
+  }
+
+  .left-curtain {
+    left: 0;
+    transform-origin: left center;
+  }
+
+  .right-curtain {
+    right: 0;
+    transform-origin: right center;
+  }
+
+  /* Animation for fade in */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* When opened */
+  #coverPage.open .left-curtain {
+    transform: translateX(-100%);
+  }
+
+  #coverPage.open .right-curtain {
+    transform: translateX(100%);
+  }
+
+  #coverPage.open .cover-content {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  html,body{
+    height:100%;
+    margin:0;
+    color:var(--white);
+    font-family:'Nunito', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background:
+      radial-gradient(1200px 700px at 20% -10%, #174a9f33 0%, transparent 60%),
+      radial-gradient(900px 500px at 110% -20%, #8d2cff22 0%, transparent 60%),
+      radial-gradient(1200px 700px at -10% 120%, #ff4da615 0%, transparent 60%),
+      linear-gradient(180deg, var(--blue-900) 0%, #030a1a 100%);
+    overflow-x:hidden;
+  }
+  /* subtle star texture */
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+      radial-gradient(2px 2px at 20% 30%, #ffffffc9 20%, transparent 22%),
+      radial-gradient(1.5px 1.5px at 70% 60%, #c5e7ffb0 20%, transparent 22%),
+      radial-gradient(1.2px 1.2px at 10% 80%, #ffffffa0 20%, transparent 22%),
+      radial-gradient(1.8px 1.8px at 85% 25%, #ffffffbd 20%, transparent 22%),
+      radial-gradient(1px 1px at 45% 10%, #b3e5ff99 20%, transparent 22%);
+    opacity:.7;
+    pointer-events:none;
+    animation: twinkle 8s linear infinite;
+  }
+  @keyframes twinkle{
+    0%,100%{opacity:.55; filter:hue-rotate(0deg)}
+    50%{opacity:.9; filter:hue-rotate(10deg)}
+  }
+    /* ====== Header / Title ====== */
+    .hero{
+    padding:48px 16px 24px;
+    text-align:center;
+    position:relative;
+  }
+  .hero h1{
+    font-family:'Great Vibes', 'Playfair Display', serif;
+    font-size: clamp(44px, 7vw, 84px);
+    margin:.1em 0 .2em;
+    color:#fff;
+    text-shadow:
+      0 0 10px #ffffff66,
+      0 0 22px var(--pink-400),
+      0 0 40px var(--pink-500);
+    letter-spacing:.02em;
+  }
+  .hero .sub{
+    font-family:'Playfair Display', serif;
+    font-weight:600;
+    color: var(--pink-400);
+    letter-spacing:.12em;
+    text-transform:uppercase;
+  }
+
+    /* ====== Layout ====== */
+    .container{
+    width:min(1100px, 92%);
+    margin:0 auto 60px;
+  }
+
+    .divider{
+    height:2px;
+    background: repeating-linear-gradient(90deg,
+      var(--pink-400) 0 16px, transparent 16px 28px);
+    filter: drop-shadow(0 0 6px var(--pink-400));
+    border-radius:2px;
+    margin:24px auto 28px;
+    width:92%;
+  }
+
+  /* ====== Photo Gallery ====== */
+  .gallery {
+    margin: 40px auto 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-caption {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6); /* soft royal blue */
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+  .photo-frame {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: #0c1e46;
+    border-radius: 22px;
+    padding: 20px;
+    border: 2px solid var(--pink-500);
+    box-shadow: 0 12px 28px #00000080, inset 0 0 0 1px #ffffff12;
+  }
+
+  .photo-item img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .photo-item img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 22px rgba(255, 105, 180, 0.7);
+  }
+
+
+    /* ====== Poems Row ====== */
+  .poems{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:24px;
+    align-items:start;
+  }
+  @media (max-width: 860px){
+    .poems{ grid-template-columns:1fr; }
+  }
+
+  .poem{
+    position:relative;
+    padding:18px 18px 18px 18px;
+    background: linear-gradient(180deg, #08132edd, #040b1cdd);
+    border-radius:18px;
+    border:1px solid var(--pink-400);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 8px 24px #00000066, inset 0 0 0 1px #ffffff0f;
+  }
+  .poem h3{
+    margin:0 0 8px;
+    font-family:'Playfair Display', serif;
+    font-weight:700;
+    letter-spacing:.02em;
+    color:#ffe9f6;
+    text-shadow: 0 0 6px var(--pink-500);
+  }
+  .poem p{
+    margin:.4em 0;
+    line-height:1.75;
+    color:#eaf2ff;
+    font-size: 16px;
+  }
+  /* ====== Sparkle stars (JS injects .sparkle) ====== */
+  .sparkle{
+    position:fixed;
+    width:2px; height:2px;
+    border-radius:50%;
+    background: radial-gradient(circle, #fff, #cfe9ff 60%, transparent 65%);
+    box-shadow:
+      0 0 6px #fff,
+      0 0 14px #89c7ff;
+    opacity:.85;
+    animation: flicker 2.2s ease-in-out infinite;
+    pointer-events:none;
+    z-index:1;
+  }
+  @keyframes flicker{
+    0%,100%{ transform:scale(.8); opacity:.5 }
+    50%{ transform:scale(1.8); opacity:1 }
+  }
+
+  /* ====== Floating heart particles ====== */
+  .float-heart{
+    position:fixed;
+    font-size: clamp(16px, 2.6vw, 28px);
+    color:#ff79b7;
+    text-shadow: 0 0 10px #ff8fc4, 0 0 18px #ff79b7;
+    animation: rise linear forwards;
+    pointer-events:none;
+    z-index:2;
+  }
+  @keyframes rise{
+    from{ transform: translateY(0) scale(.9); opacity:.95; }
+    to{   transform: translateY(-120vh) scale(1.3); opacity:0; }
+  }
+
+  /* ====== Gift Box ====== */
+    .gift-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    perspective: 1000px;
+  }
+
+  /* Box base */
+    .box_back {
+    position: absolute;
+    padding:18px 18px 18px 18px;
+    bottom: 0;
+    width: 91.5%;
+    height: 92%;
+    background: #ff0051;
+    border-style: solid;
+    border-color: #a00023;
+    border-width: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    overflow: hidden;
+  }
+
+  .box_top {
+    position: absolute;
+    bottom: 0;
+    border-radius:22px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background:  linear-gradient(145deg, #ff72b8, #fe4894);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    overflow: hidden;
+  }
+
+  /* Ribbons */
+  .ribbon-vertical {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 50%;
+    width: 25px;
+    transform: translateX(-50%);
+    background: #ffa9f9;
+  }
+  .ribbon-horizontal {
+    position: absolute;
+    left: 0; right: 0;
+    top: 50%;
+    height: 20px;
+    transform: translateY(-50%);
+    background: #ffa9f9;
+  }
+
+  .gift-box:hover .box_top {
+    animation: bounce-out-down 2s ease forwards;
+    }
+
+@keyframes bounce-out-down {
+  0% { transform: translateY(0); }
+  20% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+  /* Puzzle Segment */
+    .puzzle-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid var(--pink-500);
+    border-radius: 12px;
+    background: #0c1e46;
+    width: 350px;
+    font-family: 'Playfair Display', serif;
+  }
+  .puzzle-container input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 2px solid var(--pink-400);
+    outline: none;
+    font-size: 1rem;
+    margin: 10px 5px;
+  }
+  .puzzle-container button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: var(--pink-400);
+    border: 2px solid var(--pink-500);
+    font-weight: bold;
+    cursor: pointer;
+    color: #f8f9ff;
+  }
+  .puzzle-container button:hover {
+    background: #ff9ed1;
+  }
+  .hidden-message {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: var(--pink-500);
+    text-shadow: 0 0 10px #ffb6f9, 0 0 18px #ff99ff;
+    display: none; /* hidden by default */
+  }
+
+  /* Message Pop up */
+    /* Overlay background with blur */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1000;
+    overflow: hidden; /* prevent background scroll */
+  }
+
+  /* Popup box */
+  .popup {
+    background: linear-gradient(145deg, #863d6b, #b8003d);
+    color: #fff;
+    padding: 25px;
+    border-radius: 16px 16px 0 0;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 25px var(--pink-500);
+    transform: translateY(100%); /* start hidden below screen */
+    animation: slideUp 0.6s ease forwards;
+
+    /* 👇 scroll fix starts here */
+    max-height: 95vh;         /* limit popup height to viewport */
+    overflow-y: auto;          /* allow scroll inside the popup */
+    scrollbar-width: thin;     /* thin scrollbar for elegance */
+    scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.0);/* optional: pink scrollbar */
+  }
+
+  #popup_p1,#popup_p2,#popup_p3,#popup_p4,#popup_p5,#popup_p6 {
+    text-align: left;
+  }
+
+  /* optional — make scrollbar look better in WebKit browsers */
+  .popup::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .popup::-webkit-scrollbar-thumb {
+    background: #ffb6c1;
+    border-radius: 10px;
+  }
+
+  .popup::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Slide-up animation */
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .popup h2 {
+    margin: 0 0 10px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: rgb(255, 240, 242);
+  }
+
+  .popup p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .popup button {
+    background: rgb(255, 177, 250);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .popup button:hover {
+    background: #ff69b4;
+    color: #ffffff;
+  }
+
+/* ====== Theme Switch (TOP RIGHT CORNER) ====== */
+.TStheme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--white);
+  z-index: 2000;
+}
+
+.TSswitch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.TSswitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.TSslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--pink-400);
+  transition: 0.4s;
+  border-radius: 34px;
+  box-shadow: inset 0 0 6px var(--pink-500);
+}
+
+.TSslider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background: var(--white);
+  transition: 0.4s;
+}
+
+/* Checked state */
+input:checked + .TSslider {
+  background: var(--swift-sky);
+   box-shadow: inset 0 0 6px var(--swift-silver);
+}
+
+input:checked + .TSslider:before {
+  transform: translateX(26px);
+  background: var(--white);
+}
+
+.MStheme-toggle {
+  position: fixed;
+  top: 55px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--white);
+  z-index: 2000;
+}
+
+.MSswitch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.MSswitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.MSslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--pink-400);
+  transition: 0.4s;
+  border-radius: 34px;
+  box-shadow: inset 0 0 6px var(--pink-500);
+}
+
+.MSslider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background: var(--white);
+  transition: 0.4s;
+}
+
+/* Checked state */
+input:checked + .MSslider {
+  background: var(--ladybug-deep);
+   box-shadow: inset 0 0 6px var(--ladybug-red);
+}
+
+input:checked + .MSslider:before {
+  transform: translateX(26px);
+  background: var(--white);
+}
+
+.CStheme-toggle {
+  position: fixed;
+  top: 95px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--white);
+  z-index: 2000;
+}
+
+.CSswitch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.CSswitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.CSslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--pink-400);
+  transition: 0.4s;
+  border-radius: 34px;
+  box-shadow: inset 0 0 6px var(--pink-500);
+}
+
+.CSslider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background: var(--white);
+  transition: 0.4s;
+}
+
+/* Checked state */
+input:checked + .CSslider {
+  background: var(--cat-green);
+   box-shadow: inset 0 0 6px var(--cat-glow);
+}
+
+input:checked + .CSslider:before {
+  transform: translateX(26px);
+  background: var(--white);
+}
+
+/* ===== Language Toggle Styling ===== */
+.song-language-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px auto;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  text-shadow: 0 0 4px rgba(255,255,255,0.2);
+}
+
+.lang-label {
+  letter-spacing: 0.5px;
+}
+
+/* Slider Container */
+.lang-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+/* Hide default checkbox */
+.lang-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider Track */
+.lang-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #1b1b1b, #3a3a3a);
+  transition: 0.4s;
+  border-radius: 30px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+/* Slider Circle */
+.lang-slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--pink-500);
+  border-radius: 50%;
+  transition: 0.4s;
+  box-shadow: 0 0 8px rgba(212, 0, 191, 0.6);
+}
+
+/* Active (Tamil) State */
+input:checked + .lang-slider {
+  background: linear-gradient(90deg, #3a3a3a, #1b1b1b);
+}
+
+input:checked + .lang-slider:before {
+  transform: translateX(30px);
+  background-color: #00bcd4;
+  box-shadow: 0 0 8px rgba(0,188,212,0.6);
+}
+
+/* Making the <p> in popup invisible */
+#popup_p1 {
+  opacity: 0;
+}
+
+#popup_p2 {
+  opacity: 0;
+}
+
+#popup_p3 {
+  opacity: 0;
+}
+
+#popup_p4 {
+  opacity: 0;
+}
+
+#popup_p5 {
+  opacity: 0;
+}
+
+#popup_p6 {
+  opacity: 0;
+}
+</style>
